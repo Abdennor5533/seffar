@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Plates - Farid Seffar License Plates</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #333;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .cta-btn {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .cta-btn:hover {
+            background-color: #ff3b2e;
+        }
+
+        .plates-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .plates-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .plate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .plate-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .plate-item img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .plate-item p {
+            margin: 10px;
+        }
+
+        .plate-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .cta-btn {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Plates Collection</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plates.html">Shop Plates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Explore Our Full Range of Plates</h1>
+        <p>From building signs to road directions and custom plates, find the perfect fit for any purpose.</p>
+        <a href="contact.html" class="cta-btn">Get a Custom Quote</a>
+    </section>
+
+    <section class="plates-section">
+        <h2>Our Top Categories</h2>
+        <div class="plate-grid">
+            <!-- Repeat these divs for more plates -->
+            <div class="plate-item">
+                <img src="images/plate1.jpg" alt="Plate 1">
+                <p>Car License Plate - $50</p>
+            </div>
+            <div class="plate-item">
+                <img src="images/plate2.jpg" alt="Plate 2">
+                <p>Fire Exit Plate - $25</p>
+            </div>
+            <div class="plate-item">
+                <img src="images/plate3.jpg" alt="Plate 3">
+                <p>One Way Direction Plate - $20</p>
+            </div>
+            <!-- Continue adding up to 20 plates -->
+            <div class="plate-item">
+                <img src="images/plate4.jpg" alt="Plate 4">
+                <p>VIP Parking Plate - $50</p>
+            </div>
+            <div class="plate-item">
+                <img src="images/plate5.jpg" alt="Plate 5">
+                <p>Reserved Parking Plate - $35</p>
+            </div>
+            <!-- Add more plates up to 20 -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Farid Seffar License Plates. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
